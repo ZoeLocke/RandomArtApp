@@ -1,0 +1,15 @@
+<div class="dialog-container">
+    <div class="dialog">
+        <button id="x" @onclick="OnClose">
+            X
+        </button>
+        <h2>Your prompt is...</h2>
+        <p class="prompt">@PromptText</p>
+        <p>Go draw, you've got this 👊</p>
+    </div>
+</div>
+
+@code {
+    [Parameter] public EventCallback OnClose { get; set; }
+    [Parameter] public string PromptText { get; set; }
+}

@@ -1,0 +1,61 @@
+﻿@using RandomArtApp.Data
+@inject RecordService RecordService
+@using System.ComponentModel.DataAnnotations;
+
+<div class="row mt-4 mb-4">
+    <h2>What kind of thing would you like to draw today?</h2>
+</div> 
+<div class="row">
+    <div class="button" @onclick="@(e => FetchRecord(0))">
+        <img src="/images/object.svg" alt="object icon">
+        <p>Object</p>
+    </div>
+</div>
+<div class="row">
+    <div class="button" @onclick="@(e => FetchRecord(1))">
+        <img src="/images/concept.svg" alt="concept icon">
+        <p>Concept</p>
+    </div>
+</div>
+<div class="row">
+    <div class="button" @onclick="@(e => FetchRecord(2))">
+        <img src="/images/scene.svg" alt="scene icon">
+        <p>Scene</p>
+    </div>
+</div>
+
+@if (showingPrompt) {
+    <PromptDialog OnClose="Prompt" PromptText="@promptText"/>
+}
+
+@code {
+    public bool showingPrompt = false;
+    private Models.Record record { get; set; } = new Models.Record(); 
+    private string promptText;
+    [Required, EnumDataType(typeof(NounTypes))]
+    public string  nounType { get; set; } = "object";
+    private async Task FetchRecord(int nt)
+        {
+            switch (nt)
+            {
+                case 0:
+                    nounType = "object";
+                    break;
+                case 1:
+                    nounType = "concept";
+                    break;
+                case 2:
+                    nounType = "scene";
+                    break;
+                default:
+                    nounType = "object";
+                    break;
+            }
+            record = await RecordService.GetRecordsAsync(nounType);
+            promptText = record.IndefiniteArticle + " " + record.Noun;
+            Prompt();
+        }    
+    private void Prompt(){
+        showingPrompt = !showingPrompt;
+    }
+}

@@ -1,0 +1,1 @@
+public enum NounTypes { @object, scene, concept } ;

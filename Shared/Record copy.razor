@@ -1,0 +1,51 @@
+﻿@using RandomArtApp.Data
+@inject RecordService RecordService
+@using System.ComponentModel.DataAnnotations;
+
+@if(!prompted) {
+    <div class="container mt-4 mb-4 pt-4 pb-4">
+        <div class="row mt-4 mb-4">
+            <h2>What kind of thing would you like to draw today?</h2>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-sm p-0">
+                <EditForm Model="@NounType" OnSubmit="@FetchRecord">
+                    <InputSelect @bind-Value="NounType" class="ml-0 mr-4">
+                        @foreach (var nt in Enum.GetValues(typeof(NounTypes)))
+                        {
+                            <option value="@nt">@nt</option>
+                        }
+                    </InputSelect>
+                    <button type="submit" @onclick="@SetPrompted" class="ml-4 mr-4">Inspire me!</button>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+}
+@if(prompted) {
+    <div class="container mt-4 mb-4 pt-4 pb-4">
+        <div class="row mt-4 mb-4">
+            <div class="col-sm">
+                <p class="prompt">Try to draw... @record.IndefiniteArticle @record.Noun</p>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-sm">
+                <a @onclick="@SetPrompted">Want another prompt?</a>
+            </div>
+        </div>
+    </div>
+}
+@code {
+    private bool prompted = false;
+    private Models.Record record { get; set; } = new Models.Record(); 
+    [Required, EnumDataType(typeof(NounTypes))]
+    public string  NounType { get; set; } = "object";
+    private void SetPrompted(){
+        prompted = !prompted;
+    }
+    private async Task FetchRecord()
+        {
+            record = await RecordService.GetRecordsAsync(NounType);
+        }
+}
