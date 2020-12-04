@@ -22,10 +22,6 @@ D:\Local Repos\RandomArtApp\dist\wwwroot\images\scene.svg
 D:\Local Repos\RandomArtApp\dist\wwwroot\index.html
 D:\Local Repos\RandomArtApp\dist\wwwroot\sample-data\weather.json
 D:\Local Repos\RandomArtApp\dist\wwwroot\_redirects
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\web.config
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\data.json
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\sample-data\weather.json
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\_framework\blazor.boot.json
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.timezones.blat
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.wasm
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt.dat
@@ -94,10 +90,6 @@ D:\Local Repos\RandomArtApp\dist\wwwroot\images\scene.svg.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\index.html.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\sample-data\weather.json.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_redirects.br
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\web.config.br
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\data.json.br
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\sample-data\weather.json.br
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\_framework\blazor.boot.json.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.timezones.blat.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.wasm.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt.dat.br
@@ -165,10 +157,6 @@ D:\Local Repos\RandomArtApp\dist\wwwroot\images\scene.svg.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\index.html.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\sample-data\weather.json.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_redirects.gz
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\web.config.gz
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\data.json.gz
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\sample-data\weather.json.gz
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dist\wwwroot\_framework\blazor.boot.json.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.timezones.blat.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.wasm.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt.dat.gz
