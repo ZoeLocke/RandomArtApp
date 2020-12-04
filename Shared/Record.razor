@@ -1,6 +1,5 @@
-﻿@using RandomArtApp.Data
-@inject RecordService RecordService
-@using System.ComponentModel.DataAnnotations;
+﻿@inject HttpClient Http
+@using RandomArtApp.Models
 
 <div class="row mt-4 mb-4">
     <h2>What kind of thing would you like to draw today?</h2>
@@ -29,32 +28,38 @@
 }
 
 @code {
+    public RandomArtApp.Models.Record[] records;
     public bool showingPrompt = false;
-    private Models.Record record { get; set; } = new Models.Record(); 
-    private string promptText;
-    [Required, EnumDataType(typeof(NounTypes))]
-    public string  nounType { get; set; } = "object";
+    public Random random = new Random();
+    public RandomArtApp.Models.Record record { get; set; } = new Models.Record(); 
+    public string  nounType = "object";
+    public string promptText;
+
     private async Task FetchRecord(int nt)
+    {
+        switch (nt)
         {
-            switch (nt)
-            {
-                case 0:
-                    nounType = "object";
-                    break;
-                case 1:
-                    nounType = "concept";
-                    break;
-                case 2:
-                    nounType = "scene";
-                    break;
-                default:
-                    nounType = "object";
-                    break;
-            }
-            record = await RecordService.GetRecordsAsync(nounType);
-            promptText = record.IndefiniteArticle + " " + record.Noun;
-            Prompt();
-        }    
+            case 0:
+                nounType = "object";
+                break;
+            case 1:
+                nounType = "concept";
+                break;
+            case 2:
+                nounType = "scene";
+                break;
+            default:
+                nounType = "object";
+                break;
+        }
+        records = await Http.GetFromJsonAsync<RandomArtApp.Models.Record[]>("data.json");
+        RandomArtApp.Models.Record[] filtered = records.Where(c => c.NounType == nounType).ToArray();
+        int entry = random.Next(0, filtered.Length);
+        record = filtered[entry];
+        promptText = record.IndefiniteArticle + " " + record.Noun;
+        Console.WriteLine(nounType);
+        Prompt();
+    }
     private void Prompt(){
         showingPrompt = !showingPrompt;
     }

@@ -137,3 +137,8 @@ p.prompt {
   color: rgb(40, 159, 102);
   text-decoration: none;
 }
+#loading {
+  margin: auto auto;
+  text-align: center;
+  font-size: 3em;
+}
