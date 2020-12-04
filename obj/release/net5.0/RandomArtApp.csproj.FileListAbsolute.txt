@@ -1,4 +1,8 @@
 D:\Local Repos\RandomArtApp\bin\release\net5.0\wwwroot\_framework\blazor.boot.json
+D:\Local Repos\RandomArtApp\bin\release\net5.0\dist\web.config
+D:\Local Repos\RandomArtApp\bin\release\net5.0\dist\wwwroot\data.json
+D:\Local Repos\RandomArtApp\bin\release\net5.0\dist\wwwroot\sample-data\weather.json
+D:\Local Repos\RandomArtApp\bin\release\net5.0\dist\wwwroot\_framework\blazor.boot.json
 D:\Local Repos\RandomArtApp\bin\release\net5.0\RandomArtApp.StaticWebAssets.xml
 D:\Local Repos\RandomArtApp\bin\release\net5.0\RandomArtApp.dll
 D:\Local Repos\RandomArtApp\bin\release\net5.0\ref\RandomArtApp.dll
