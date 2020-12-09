@@ -28,7 +28,7 @@ D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt.dat
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_CJK.dat
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_EFIGS.dat
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_no_CJK.dat
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.5.0.0.js
+D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.5.0.1.js
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.dll
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.Web.dll
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.dll
@@ -96,7 +96,7 @@ D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt.dat.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_CJK.dat.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_EFIGS.dat.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_no_CJK.dat.br
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.5.0.0.js.br
+D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.5.0.1.js.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.dll.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.Web.dll.br
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.dll.br
@@ -163,7 +163,7 @@ D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt.dat.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_CJK.dat.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_EFIGS.dat.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\icudt_no_CJK.dat.gz
-D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.5.0.0.js.gz
+D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\dotnet.5.0.1.js.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.dll.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.Web.dll.gz
 D:\Local Repos\RandomArtApp\dist\wwwroot\_framework\Microsoft.AspNetCore.Components.WebAssembly.dll.gz
