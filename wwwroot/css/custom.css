@@ -28,39 +28,26 @@ p.subheading {
   font-size: x-large;
   font-style: italic;
 }
-button,
-select {
-  border: none;
-  font-size: x-large;
-  font-style: bold;
-}
 button {
   padding: 0.4em;
   background-color: #f472fd;
   color: white;
-}
-select {
-  padding: 0.5em;
-  background-color: white;
-  width: 10em;
+  border: none;
+  font-size: x-large;
+  font-style: bold;
 }
 button:active,
 button:hover {
   background-color: white;
   color: #f472fd;
 }
-button:focus,
-select:focus {
+button:focus {
   outline-style: none;
 }
 p.prompt {
   font-size: 4em;
   margin-top: 0.25em;
   margin-bottom: 0.5em;
-}
-.bloop {
-  display: none;
-  width: auto;
 }
 .button {
   background: rgb(40, 159, 102);
@@ -114,7 +101,7 @@ p.prompt {
 }
 @media screen and (max-width: 992px) {
   .button img {
-    height: 50px;
+    display: none;
   }
   h1,
   h2,
@@ -138,7 +125,7 @@ p.prompt {
   text-decoration: none;
 }
 #loading {
-  margin: auto auto;
+  margin: 0 auto;
   text-align: center;
   font-size: 3em;
 }
