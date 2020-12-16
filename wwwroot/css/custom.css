@@ -114,6 +114,9 @@ p.prompt {
   .dialog {
     width: 90%;
   }
+  p.prompt {
+    font-size: 15vw;
+  }
 }
 .fa {
   color: white;
