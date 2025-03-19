@@ -118,12 +118,13 @@ p.prompt {
     font-size: 15vw;
   }
 }
-.fa {
+.fa-brands {
   color: white;
-  padding: 0 0.5em;
+  padding: 0 0 0.5em 0;
+  margin-left: 0.5em;
 }
-.fa:hover,
-.fa:active {
+.fa-brands:hover,
+.fa-brands:active {
   color: rgb(40, 159, 102);
   text-decoration: none;
 }
